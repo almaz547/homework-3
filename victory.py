@@ -64,11 +64,10 @@ famous_people = ['Александр Сергеевич Пушкин', 'Миха
 
 new_test = 'да'
 while new_test == "да":
-    answer_es = 0
     data_quiz = random.sample(famous_people, 5)
     print('Винторина: назовите дату рождения пяти знаменитых людей')
+    answer_es = 0
     for i in range(len(data_quiz)):
-
         question = input(f'Назовите дату рождения {data_quiz[i]},в формате число.месяц.год: ')
         if question == dist_famous_people.get(data_quiz[i]):
             print('Ответ верный !')
