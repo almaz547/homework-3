@@ -76,6 +76,8 @@ while new_test == "да":
             print(f'Неверно ! ,правильный ответ: {dist_famous_people_x.get(data_quiz[i])}')
     print(f'Количество правильных ответов: {answer_es}')
     print(f'Количество неправильных ответов: {5 - answer_es}')
+    print(f'Процент правильных ответов {answer_es*100/5}')
+    print(f'Процент неправильных ответов {(5-answer_es)*100/5}')
     new_test = input("Если хотите продолжить тест введите: да ,если не хотите, введите: нет:  ")
     while new_test != 'да' and new_test != 'нет':
         print("Введите либо: да , либо: нет !")
