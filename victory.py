@@ -9,8 +9,8 @@ while new_test == "да":
     answer_es = 0
     data_quiz = random.sample(famous_people, 5)
     #print(data_quiz)
-    print('Нозовите дату рождения пяти знаменитых людей')
-    question_1 = input(f'Нозовите дату рождения {data_quiz[0]},в формате число.месяц.год: ')
+    print('Винторина: назовите дату рождения пяти знаменитых людей')
+    question_1 = input(f'Назовите дату рождения {data_quiz[0]},в формате число.месяц.год: ')
     if question_1 == dist_famous_people.get(data_quiz[0]):
         print('Ответ верный !')
         answer_es += 1
